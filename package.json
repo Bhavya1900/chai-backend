@@ -1,0 +1,17 @@
+{
+  "name": "backend-3",
+  "version": "1.0.0",
+  "description": "a chai aur code backend at youtube",
+  "keywords": [
+    "chai",
+    "backend",
+    "javascript"
+  ],
+  "license": "ISC",
+  "author": "Bhavya Dhoka",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
