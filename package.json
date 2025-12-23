@@ -1,0 +1,17 @@
+{
+  "name": "backend-project",
+  "version": "1.0.0",
+  "description": "a backend project by seeing youtobe tutorials",
+  "keywords": [
+    "javscript",
+    "backend",
+    "chai"
+  ],
+  "license": "ISC",
+  "author": "bhavya dhoka",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
