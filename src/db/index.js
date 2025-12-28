@@ -7,7 +7,7 @@ const connectDB = async()=>{
         const connectionInstance=await mongoose.connect(`${process.env.MONGO_URI}/${DB_NAME}`);
         console.log(`\n MongoDB connected!!! DB Host:${connectionInstance.connection.host}`)
     } catch (error) {
-        console.log("Error!!!! ",error);
+        console.log("Error!!!! hi password sahi se daal ",error);
         // throw error is one method another is
         process.exit(1)
     }
