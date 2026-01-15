@@ -368,7 +368,7 @@ const getUserchannelProfile= asyncHandler(async(req,res)=>{
     }
 
     return res.status(200)
-    .json(new ApiResponse(200,channel[0],"USer channel fetched successfully"))
+    .json(new ApiResponse(200,channel[0],"User channel fetched successfully"))
 })
 
 const getWatchHistory= asyncHandler(async(req,res)=>{
@@ -382,7 +382,7 @@ const getWatchHistory= asyncHandler(async(req,res)=>{
             $lookup:{
                 from: "videos",
                 localField:"watchHistory",
-                foreignField:"_id",// woh particular video ki id jo watch history mai mentioned thi
+                foreignField:"_id",// woh particular video ki id jo watch history mai mentioned thi voh videos ,ia kah akaha hai
                 as: "watchHistory",
                 pipeline:[
                     {
