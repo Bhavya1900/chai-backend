@@ -29,7 +29,7 @@ router.route("/current-user").get(verifyJWT,getCurrentUser) // user kuch bhej nh
 router.route("/update-account").patch(verifyJWT,updateAccountDetails) // sab update nhi only one thing so patch
 
 router.route("/avatar").patch(verifyJWT,upload.single("avatar"),updateUserAvatar)
-router.route("/cover-image").patch(verifyJWT,upload.single("/coverImage"),updateUserCoverImage)
+router.route("/cover-image").patch(verifyJWT,upload.single("coverImage"),updateUserCoverImage)
 router.route("/c/:username").get(verifyJWT,getUserchannelProfile)
 router.route("/history").get(verifyJWT,getWatchHistory)
 export default router;
